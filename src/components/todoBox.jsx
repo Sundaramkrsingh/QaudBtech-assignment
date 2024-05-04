@@ -11,7 +11,7 @@ const TodoBox = ({ title, dueDate, onClickDel, onCompleted, onAddAgain, complete
                 {dueDate}
             </div>
         </div>
-        <div>
+        <div className="flex justify-between w-1/4">
             <Button label={"del"} onClick={onClickDel} />
             <TodoButton onClick={completed? onAddAgain: onCompleted} completed={completed} />
         </div>
